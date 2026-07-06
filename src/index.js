@@ -1,14 +1,19 @@
+const star = [
+  '    *    ',
+  '   ***   ',
+  '  *****  ',
+  ' ******* ',
+  '*********',
+  '   ***   ',
+  '   ***   ',
+];
+
 function printStar() {
-  const star = [
-    '    *    ',
-    '   ***   ',
-    '  *****  ',
-    ' ******* ',
-    '*********',
-    '   ***   ',
-    '   ***   ',
-  ];
   star.forEach(line => console.log(line));
 }
 
-module.exports = { printStar };
+function getStar() {
+  return star.join('\n');
+}
+
+module.exports = { printStar, getStar, star };
