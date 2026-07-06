@@ -4,7 +4,7 @@
   "description": "Development tools package",
   "main": "src/index.js",
   "scripts": {
-    "postinstall": "echo hello world"
+    "postinstall": "node scripts/verify-deps.js"
   },
   "keywords": [],
   "license": "ISC"
